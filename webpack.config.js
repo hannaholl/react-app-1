@@ -27,19 +27,19 @@ module.exports = {
 		preLoaders: [
 			{
 				test: /\.(js|jsx)$/,
-				loaders: ["eslint-loader"],
+				loaders: ['eslint-loader'],
 				exclude: /node_modules/
 			}
 		],
 		loaders: [
 			{
 				test: /\.html$/,
-				loader: "file?name=[name].[ext]"
+				loader: 'file?name=[name].[ext]'
 			},
 			{
 				test: /\.(js|jsx)/,
 				exclude: /node_modules/,
-				loaders: ["react-hot", "babel-loader"]
+				loaders: ['react-hot', 'babel-loader?presets[]=stage-2']
 			}
 		]
 	},
